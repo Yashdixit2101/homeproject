@@ -1,0 +1,9 @@
+<div class="xyz">
+  <section class="listing" *ngFor="let i of housingLocationList">
+    <div>
+      <img class="listing-photo" [src]="i.photo" alt="Exterior photo of {{i.name}}">
+      <h2 class="listing-heading">{{ i.name }}</h2>
+      <p class="listing-location">{{ i.city}}, {{i.state }}</p>
+    </div>
+  </section>
+</div>
